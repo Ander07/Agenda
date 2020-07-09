@@ -6,7 +6,7 @@ var app = require('./app');
 var port = 3300;
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/Agenda2018134', {useNewUrlParser:true, useUnifiedTopology:true})
+mongoose.connect('url de la base de datos', {useNewUrlParser:true, useUnifiedTopology:true})
 .then(()=>{
     console.log('Conexion a la base de datos correctamente');
     //Levantar servidor de express
